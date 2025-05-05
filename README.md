@@ -114,6 +114,11 @@ Visit http://localhost:3000 in your browser.
 
 ---
 
+## 🖼 ER Diagram
+
+![ER Diagram](./public/ER.jpg)
+
+
 ## ⚠️ Notes
 
 - Educational/demo use only – not ready for production without hardening  
