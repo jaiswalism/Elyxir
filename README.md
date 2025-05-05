@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💊 Pharmacy Management System
 
-## Getting Started
+A modern, full-featured Pharmacy Management System built with **Next.js (App Router)**, **MySQL**, and **TypeScript**.  
+It supports inventory, sales, purchases, employees, suppliers, and customer management with **role-based dashboards** for Admin and Pharmacist.
 
-First, run the development server:
+---
 
+## 🚀 Features
+
+### 🧑‍💼 Admin Dashboard
+- Manage medicines, suppliers, purchases, employees, and customers
+- Access sales reports, low stock alerts, and transaction analytics
+
+### 👨‍⚕️ Pharmacist Dashboard
+- View real-time inventory
+- Add new sales
+- Add/search customers
+
+### 🔐 Authentication
+- Secure login for Admin and Pharmacist roles using `emplogin` and `employee` tables
+
+### 📦 Inventory Management
+- Add, update, and search medicines
+- Track stock levels
+
+### 💰 Sales & Purchases
+- Record and view transactions
+- Track purchases from suppliers and sales to customers
+
+### 🧍 Customer Management
+- Add and search customer data
+
+### 🏢 Supplier Management
+- Add, update, and view suppliers
+
+### 📊 Reports
+- View sales performance, low stock alerts, and top-selling medicines
+
+### 💾 Database Backup & Restore
+- Admins can backup and restore the entire MySQL database
+
+### 💻 UI & UX
+- Responsive design using **Tailwind CSS**
+- Icons powered by **Heroicons**
+- Clean, minimal dashboard experience
+
+---
+
+## 🛠 Getting Started
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd <your-repo-folder>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Set Up the MySQL Database
+- Create a new database or import `pharmacy_record.sql` in MySQL (e.g., pharmacy_record)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Tables include:
+- customer
+- emplogin
+- employee
+- meds
+- purchase
+- sales
+- sales_items
+- suppliers
 
-## Learn More
+### 4. Configure Environment Variables
+Create a `.env` file in the root directory:
 
-To learn more about Next.js, take a look at the following resources:
+```env
+DB_HOST=localhost
+DB_USER=your_mysql_user
+DB_PASS=your_mysql_password
+DB_NAME=pharmacy_record
+DB_PORT=3306
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Start the Development Server
+```bash
+npm run dev
+```
+Visit http://localhost:3000 in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔑 Usage
+- Login with credentials from the emplogin table
+- Role-based access for Admin and Pharmacist
+- Secure session/cookie management for authentication
+- Logout clears session state
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧬 Database Schema (Summary)
+
+| Table                  | Purpose                           |
+|------------------------|-----------------------------------|
+| `customer`             | Customer details                  |
+| `emplogin`             | Employee login credentials        |
+| `employee`             | Employee info & designations      |
+| `meds`                 | Medicines inventory               |
+| `purchase`             | Purchase transactions             |
+| `sales`                | Sales transactions                |
+| `sales_items`          | Items in each sale                |
+| `suppliers`            | Supplier details                  |
+
+---
+
+## ⚠️ Notes
+
+- Educational/demo use only – not ready for production without hardening  
+- All table/column names match MySQL exactly (e.g., `Med_ID`, `C_ID`, etc.)  
+- If you find a bug or have a feature request, open an issue or submit a PR!
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
+
+---
+
+## ⭐ Support
+
+If you find this project useful, give it a star! Your support means a lot.
