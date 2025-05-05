@@ -45,6 +45,14 @@ It supports inventory, sales, purchases, employees, suppliers, and customer mana
 - Clean, minimal dashboard experience
 
 ---
+## 🖼 Preview
+
+![Admin Dashboard](./public/AdminPage.png)
+![Staff Dashboard](./public/StaffPage.png)
+![Point of Sale](./public/SalesPage.png)
+![Backup & Restore Page](./public/BackupPage.png)
+
+---
 
 ## 🛠 Getting Started
 

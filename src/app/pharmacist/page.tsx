@@ -13,7 +13,7 @@ export default function PharmacistDashboard() {
       {/* Sidenav */}
       <nav className="fixed top-0 left-0 h-full w-64 bg-blue-900 text-gray-200 flex flex-col z-10">
         <div className="py-6 text-center text-2xl font-bold tracking-wide border-b border-blue-800">
-          PHARMACIA
+          ELYXIR
         </div>
         <div className="flex-1 px-4 py-6 space-y-1">
           <Link href="/pharmacist" className="block px-2 py-2 rounded hover:bg-blue-800">Dashboard</Link>
