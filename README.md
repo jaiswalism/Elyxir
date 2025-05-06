@@ -58,8 +58,8 @@ It supports inventory, sales, purchases, employees, suppliers, and customer mana
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/jaiswalism/Elyxir.git
+cd Elyxir
 ```
 
 ### 2. Install Dependencies
